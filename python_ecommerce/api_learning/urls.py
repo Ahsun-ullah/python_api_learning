@@ -3,5 +3,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("user", views.api_learning),
+    path("user", views.testing_first),
 ]
