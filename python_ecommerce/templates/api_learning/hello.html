@@ -1,24 +1,21 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
     <title>Document</title>
   </head>
   <body>
-    {% for names in value reversed %}
+    {% for names in value reversed %} {{forloop.counter}} {{names}} <br />
 
-    {{forloop.counter}}
-    
-    {{names}} <br>
-    
-    {% endfor %}
-    <!-- {% if vaue %}
+    {% endfor %} {% if vaue %}
     <h1>Congratulations..!{{value|length}}.</h1>
     {% elif value %}
     <h1>No.!Congratulations..!{{value|length}}.</h1>
     {% else %}
     <h1>Congratulations..!</h1>
-    {% endif %} -->
+    {% endif %}
   </body>
 </html>

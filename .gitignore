@@ -11,4 +11,5 @@ __pycache__/
 
 # Environment stuff:
 .env
+env
 venv/
